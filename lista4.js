@@ -116,7 +116,7 @@ function exe05(){
 function exe06(){
     let salario = []; let nome = [] 
     for(let i=0;i<5;i++){
-    nome[i] = Number(prompt(`Nome ${i+1}: `))
+    nome[i] = prompt(`Nome ${i+1}: `)
     salario[i] = Number(prompt(`Salário: `))
     }
 
@@ -129,7 +129,7 @@ function exe06(){
             menor = salario[i]
         }
     }
-    let nomemaior=nome(salario.indexOf(maior))
+    let nomemaior=nome(salario.indexOf(maior)) // o nomemaior recebe o valor de nome na posição de indice do salário maior
     let nomemenor=nome(salario.indexOf(menor))
     console.log(`${nomemaior} vai receber o salário ${maior}`)
     console.log(`${nomemenor} vai receber o salário ${menor}`)
