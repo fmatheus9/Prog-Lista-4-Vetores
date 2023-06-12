@@ -75,7 +75,7 @@ function ex03(){
 }
 }
 
-function exe4(){
+function exe04(){
     let vet = []
     for(let i=0;i<15;i++){
         vet[i] = Number(prompt(`Informe o ${i+1}o. elemento`))
