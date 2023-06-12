@@ -160,6 +160,28 @@ function exe08(){
     alert(`Alunos com nota a baixo da média = (${z}), precisando das notas (${x}) para fechar as notas`)
 }
 
-function exe09(){
-    
+function exe9(){
+    let nome = []; let cod = []; let prc = []; let i; let novoprc = []
+
+    for(i = 0; i < 10; i++){
+        nome[i] = prompt('Insira o nome do produto.')
+        cod[i] = Number(prompt('Insira o código do produto.'))
+        prc[i] = Number(prompt('Insira o preço do produto.'))
+        if((cod[i] % 2 == 0) && (prc[i] > 1000)){
+            novoprc[i] = prc[i] * 1.2
+        }
+        else if(cod[i] % 2 == 0){
+            novoprc[i] = prc[i] * 1.15
+        }
+        else if(prc[i] > 1000){
+            novoprc[i] = prc[i] * 1.1
+        }
+        else{
+            novoprc[i] = "Não mudou."
+        }
+        
+        }
+    for(i = 0; i < 10; i++){
+        alert(`Nome do produto: ${nome[i]}\nCódigo do produto: ${cod[i]}\nPreço do produto: ${prc[i]}\nNovo preço do produto: ${novoprc[i]}`)
+    } 
 }
