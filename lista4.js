@@ -1,4 +1,4 @@
-function ex01(){
+function exe01(){
 let vet=[]; let vetp=[]; let veti=[]
 for(let i=0;i<5;i++){
     vet[i] = Number(prompt(`Informe o ${i+1}º valor:`))
@@ -15,7 +15,7 @@ console.log(`Qtde de pares ${vetp.length} - ${vetp}`)
 console.log(`Qtde de ímpares ${veti.length} - ${veti}`)
 }
 
-function ex02(){
+function exe02(){
 let vet=[]; let vet2=[]; let vet3=[]; let vet23=[]
 for(let i=0;i<5;i++){
     vet[i]=Number(prompt(`Informe o ${i+1}º valor:`))
@@ -36,7 +36,7 @@ console.log(`Número de valores multiplos de 2 = ${vet2.length}, sendo eles: ${v
 console.log(`Número de valores multiplos de 3 = ${vet3.length}, sendo eles: ${vet3}`)   
 }
 
-function ex03(){
+function exe03(){
                         //=-=-=PRIMEIRA PARTE=-=-=//
     //DECLARAÇÃO DE VARIÁVEIS//
     let vetcodigos=[]; let vetestoque=[];
@@ -175,7 +175,7 @@ function exe08(){
     alert(`Alunos com nota a baixo da média = (${z}), precisando das notas (${x}) para fechar as notas`)
 }
 
-function exe9(){
+function exe09(){
     let nome = []; let cod = []; let prc = []; let i; let novoprc = []
 
     for(i = 0; i < 10; i++){
