@@ -121,3 +121,45 @@ function exe06(){
     console.log(`${nomemaior} vai receber o salário ${maior}`)
     console.log(`${nomemenor} vai receber o salário ${menor}`)
 }
+
+function exe07(){
+    let vetor=[]; let positivos = 0; let negativos = 0; let zero=0
+    for(let i =0;i<10;i++){
+        vetor[i]=Number(prompt(`Informe o valor do vetor ${i+1}: `))
+        if(vetor[i]<0){
+            negativos++
+        }
+        else if(vetor[i]>0){
+            positivos=positivos+vetor[i]
+        }
+        else if(vetor[i]==0){
+            zero++
+        }
+    }
+    alert(`Quantidade de valores negativos = ${negativos}.\nSoma dos valores positivos = ${positivos}.\nQuantidades de 0's informados = ${zero}`)
+}
+
+function exe08(){
+    let nomes=[]; let media=[]; let x = []; let z = []
+    for(let i=0;i<7;i++){
+        nomes[i]=prompt(`Informe o nome do ${i+1}º aluno: `)
+        media[i]=Number(prompt(`Informe a nota do ${i+1}º aluno: `))
+    }
+    let maior = media[0]; let nomemaior=[]
+    for(let i=0;i<7;i++){
+        if(maior<media[i]){
+            nomemaior=nomes[i]
+            maior=media[i]
+        }
+        if(media[i]<=7){
+            z.push(nomes[i])
+            x.push(7-media[i])
+        }
+    }
+    alert(`Maior nota = ${maior}, do aluno ${nomemaior}`)
+    alert(`Alunos com nota a baixo da média = (${z}), precisando das notas (${x}) para fechar as notas`)
+}
+
+function exe09(){
+    
+}
