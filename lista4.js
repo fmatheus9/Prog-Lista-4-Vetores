@@ -75,6 +75,21 @@ function ex03(){
 }
 }
 
+function exe4(){
+    let vet = []
+    for(let i=0;i<15;i++){
+        vet[i] = Number(prompt(`Informe o ${i+1}o. elemento`))
+    }
+    // cria um vetor que guarda as posições do número 30
+    let posicoes = []
+    for(let i=0;i<15;i++){
+        if (vet[i] == 30) {
+            posicoes.push(i)
+        }
+    }
+    alert(`Posições aonde o 30 aparecem ${posicoes}`)
+}
+
 
 //vetor.push(elemento)--> insere na ultima posição do vetor//
 //vetor.includes(elemento)--> verifica se o elemento esta contido no vetor//
