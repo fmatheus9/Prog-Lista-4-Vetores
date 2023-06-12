@@ -1,3 +1,8 @@
+//vetor.push(elemento)--> insere na ultima posição do vetor//
+//vetor.includes(elemento)--> verifica se o elemento esta contido no vetor//
+//vetor.indexOf(elemento)--> informa a posição do elemento dentro do vetor, caso não encontrado informa o valor de -1
+//vetor.length--> nostra a quantidade de itens dentro do vetor.
+
 function exe01(){
 let vet=[]; let vetp=[]; let veti=[]
 for(let i=0;i<5;i++){
@@ -90,12 +95,6 @@ function exe04(){
     alert(`Posições aonde o 30 aparecem ${posicoes}`)
 }
 
-
-//vetor.push(elemento)--> insere na ultima posição do vetor//
-//vetor.includes(elemento)--> verifica se o elemento esta contido no vetor//
-//vetor.indexOf(elemento)--> informa a posição do elemento dentro do vetor, caso
-//não encontrado informa o valor de -1
-
 function exe05(){
     let vetlog=[]; let vetling=[]
     for(let i=0;i<10;i++){
@@ -107,8 +106,7 @@ function exe05(){
     // verificar alunos que fazem ambas as diciplinas
     let comum=[]
     for(let i=0;i<10;i++){
-        if(vetling.includes(vetlog[i])){ // se o vetlog[i] esta incluido no
-            //letling -> verifica se esta em linguagem tambem
+        if(vetling.includes(vetlog[i])){ // se o vetlog[i] esta incluido no letling -> verifica se esta em linguagem tambem
             comum.push(vetlog[i]) // adiciona o valor de vetlog[i] na ultima poição do comum
     }
     console.log(`Alunos que fazem ambas ${comum}`)
